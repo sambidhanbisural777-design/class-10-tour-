@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Educational Tour 2082</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bhujung: '#FF6B6B',
+                        dhamphus: '#4ECDC4',
+                        ghale: '#45B7D1',
+                        ghandruk: '#FFA07A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fnps.jpg&w=1200&q=100')">
+<div class="container mx-auto px-4 py-8">
+<div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
+            <div class="text-center mb-8">
+                <h1 class="text-2xl font-bold text-black mb-2">BHUJUNG - DHAMPUS - GHALEGAUN - GHANDRUK</h1>
+                <h2 class="text-2xl font-semibold text-black">Class 10 Educational Tour 2082</h2>
+            </div>
+
+            <form id="tourForm" class="space-y-6 mb-8">
+                <div>
+                    <label class="block text-black font-bold mb-2 text-lg">Full Name</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 border-2 border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-bhujung text-lg">
+                </div>
+                <div>
+                    <label class="block text-black font-bold mb-2 text-lg">Roll Number</label>
+                    <input type="number" id="roll" required class="w-full px-4 py-3 border-2 border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-dhamphus text-lg">
+                </div>
+
+                <div class="pt-4">
+                    <p class="text-black font-bold mb-4 text-lg">Will you be joining the tour?</p>
+                    <div class="flex gap-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="attending" value="yes" class="form-radio text-bhujung h-5 w-5" checked>
+                            <span class="ml-2 text-lg">Yes, I'm excited!</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="attending" value="no" class="form-radio text-dhamphus h-5 w-5">
+                            <span class="ml-2 text-lg">No, I can't make it</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="reasonContainer" class="hidden">
+                    <label class="block text-black font-bold mb-2 text-lg">Reason for not attending</label>
+                    <textarea id="reason" class="w-full px-4 py-3 border-2 border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-ghale text-lg"></textarea>
+                </div>
+
+                <div id="confirmationContainer" class="text-center">
+                    <button type="submit" class="bg-black text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 text-lg">
+                        Confirm Participation
+                    </button>
+                </div>
+            </form>
+
+            <!-- Image section remains unchanged -->
+            <div class="mb-8 grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-bhujung/20 p-4 rounded-lg text-center">
+                    <h3 class="font-bold text-bhujung">Bhujung</h3>
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fbhujung.jpg&w=640&q=75" alt="Bhujung" class="rounded-lg my-2 w-full">
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2F1.jpg&w=640&q=75" alt="Bhujung View" class="rounded-lg my-2 w-full">
+                </div>
+                <div class="bg-dhamphus/20 p-4 rounded-lg text-center">
+                    <h3 class="font-bold text-dhamphus">Dhamphus</h3>
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fdhamphus.jpg&w=640&q=75" alt="Dhamphus" class="rounded-lg my-2 w-full">
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2F7a.jpg&w=640&q=75" alt="Dhamphus View" class="rounded-lg my-2 w-full">
+                </div>
+                <div class="bg-ghale/20 p-4 rounded-lg text-center">
+                    <h3 class="font-bold text-ghale">Ghale Gaun</h3>
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fghalegaun.jpg&w=640&q=75" alt="Ghale Gaun" class="rounded-lg my-2 w-full">
+                </div>
+                <div class="bg-ghandruk/20 p-4 rounded-lg text-center">
+                    <h3 class="font-bold text-ghandruk">Ghandruk</h3>
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fghandruk.jpg&w=640&q=75" alt="Ghandruk" class="rounded-lg my-2 w-full">
+                    <img src="https://huggingface.co/deepsite/_next/image?url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fsambidhan12%2Fcolorful-void-explorer%2Fresolve%2Fmain%2Fimages%2Fghandruk.webp&w=640&q=75" alt="Ghandruk View" class="rounded-lg my-2 w-full">
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+feather.replace();
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbxkjxlYI_SE_j6FqXPZHWFJtCboD22DMoQNZEzcPvkIRPFdiVyV5fskB-qmrx6c98ZR/exec";
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('tourForm');
+  const reasonContainer = document.getElementById('reasonContainer');
+  const attendingRadios = document.querySelectorAll('input[name="attending"]');
+
+  attendingRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'no') {
+        reasonContainer.classList.remove('hidden');
+      } else {
+        reasonContainer.classList.add('hidden');
+      }
+    });
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const roll = document.getElementById("roll").value;
+    const status = document.querySelector('input[name="attending"]:checked').value;
+    const reason = document.getElementById("reason").value;
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify({
+        name: name,
+        roll: roll,
+        status: status,
+        reason: reason
+      })
+    })
+    .then(() => {
+      alert("Saved! Your response is recorded.");
+      form.reset();
+      reasonContainer.classList.add("hidden");
+    })
+    .catch(() => {
+      alert("Error! Try again.");
+    });
+  });
+});
+</script>
+</body>
+</html>
+ 
